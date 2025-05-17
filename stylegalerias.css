@@ -1,0 +1,137 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #030303;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  padding: 2rem 1rem;
+}
+
+/* Contenedor general */
+.galeria-contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Botón regresar */
+.btn-volver {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  background-color: #FF5F00;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(255, 95, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.btn-volver:hover {
+  background-color: #fff;
+  color: #FF5F00;
+  
+  transform: translateY(-3px);
+}
+
+/* Título */
+.titulo-galeria {
+  font-size: 2rem;
+  font-weight: 00;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .titulo-galeria {
+    font-size: 2rem;
+  }
+}
+
+/* Párrafo */
+.descripcion-galeria {
+  font-size: 1rem;
+  color: #ffffff;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .descripcion-galeria {
+    font-size: 1rem;
+  }
+}
+
+/* Galería estilo masonry */
+.galeria {
+  columns: 2;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .galeria {
+    columns: 2;
+  }
+}
+
+@media (min-width: 900px) {
+  .galeria {
+    columns: 3;
+  }
+}
+
+
+/* Contenedor de imagen */
+.imagen-wrapper {
+  position: relative;
+  width: 100%;
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+
+/* Imágenes */
+.imagen {
+  width: 100%;
+  border-radius: 1rem;
+  display: block;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.imagen:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+/* Tamaños según formato */
+.post {
+  aspect-ratio: 1 / 1; /* Cuadrado */
+}
+
+.historia {
+  aspect-ratio: 9 / 16; /* Vertical */
+}
+
+
+@keyframes fadeInIcons {
+  from {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
