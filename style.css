@@ -127,6 +127,7 @@ body {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  margin-top: -30px;
 }
 
 .hero-section::before {
@@ -174,12 +175,13 @@ body {
   object-fit: cover;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
   animation: floatIn 1s ease-out forwards;
-  background-color: #ffffff;
+  
 }
 
 @media (max-width: 768px) {
   .hero-image img {
-    max-width: 250px;
+    max-width: 350px;
+    margin-bottom: -30px;
   }
 }
 
@@ -549,6 +551,13 @@ body {
 .animated-banner:focus-within {
   outline: 2px dashed #fd6d0d;
 }
+
+
+
+
+
+
+
 
 /* ABOUT ME */
 .about-me {
