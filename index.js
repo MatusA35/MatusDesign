@@ -10,7 +10,7 @@ if (hamburger && navLinks) {
 
 // Animación de escritura para .typing-text
 const typingElement = document.querySelector('.typing-text');
-const words = ['Fotógrafo', 'Diseñador', 'Soñador', 'Animador', 'Creativo', 'Editor de Video'];
+const words = ['Fotógrafo', 'Diseñador', 'Soñador', 'Animador', 'Creativo',];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
